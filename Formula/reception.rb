@@ -2,7 +2,7 @@ class Reception < Formula
   desc "Entry page & reverse proxy for all your docker-compose projects."
   homepage "https://github.com/ninech/reception"
   url "https://github.com/ninech/reception/archive/v0.1.2.tar.gz"
-  sha256 "20726e9f14be2c5273772b9bc4adeef99d0f8cbd4644cccd75faaa12e3d5ff32"
+  sha256 "2be1ee690b53167efbdf9c469d6ff7cb58530586eea6f832d65aea6add0f6c44"
   head "https://github.com/ninech/reception.git"
 
   depends_on "docker-gen" => :run
