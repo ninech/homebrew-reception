@@ -1,8 +1,8 @@
 class Reception < Formula
   desc "Entry page & reverse proxy for all your docker-compose projects."
   homepage "https://github.com/ninech/reception"
-  url "https://github.com/ninech/reception/archive/v0.1.2.tar.gz"
-  sha256 "2be1ee690b53167efbdf9c469d6ff7cb58530586eea6f832d65aea6add0f6c44"
+  url "https://github.com/ninech/reception/archive/v0.2.0.tar.gz"
+  sha256 "2b2baf13bee061b1b91a08f44234a5fc22a1f393b2d35a51e3b3edb96b4aad99"
   head "https://github.com/ninech/reception.git"
 
   depends_on "docker-gen" => :run
@@ -26,7 +26,7 @@ class Reception < Formula
     EOS
   end
 
-  plist_options :manual => "sudo docker-gen -config #{HOMEBREW_PREFIX}/etc/reception/docker-gen.osx.conf"
+  plist_options :manual => "cd /usr/local/etc/reception; sudo docker-gen -config #{HOMEBREW_PREFIX}/etc/reception/docker-gen.osx.conf"
 
   def plist; <<-EOS.undent
     <?xml version="1.0" encoding="UTF-8"?>
