@@ -3,10 +3,11 @@ class Reception < Formula
   homepage "https://github.com/ninech/reception"
   url "https://github.com/ninech/reception/archive/2.0.0.tar.gz"
   version "2.0.0"
-  sha256 "f2cc027a448990761ca9e3da704f3a6aefeee2520ac246bcf9e1c54ef122ae31"
+  sha256 "efc080ca5245a6a9718936c22c7502a889c2d3dd71880315fe4bea95b4da4cb5"
   head "https://github.com/ninech/reception.git"
 
   depends_on "go" => :build
+  depends_on "git" => :build
   depends_on "docker" => :optional
   depends_on "docker-compose" => :optional
 
@@ -16,6 +17,7 @@ class Reception < Formula
 
     ENV["GOBIN"] = buildpath
     ENV["GOPATH"] = buildpath
+    ENV["PATH"] = "#{buildpath}:#{ENV["PATH"]}"
 
     system "make", "build"
 
@@ -25,6 +27,8 @@ class Reception < Formula
   def caveats
     <<-EOS.undent
       Read https://github.com/ninech/reception#macos to learn how to complete the setup!
+
+      Then type http://reception.docker into your browser and 😍.
     EOS
   end
 
