@@ -11,6 +11,12 @@ class Reception < Formula
   depends_on "docker" => :optional
   depends_on "docker-compose" => :optional
 
+  bottle do
+    cellar :any
+    root_url "https://github.com/ninech/homebrew-reception/releases/download/v2.0.0_3"
+    sha256 "70964ae0e9f1c416ddde43adbb50e955b0f6d38c2f86b7310912ebca01d89f3d" => :sierra
+  end
+
   def install
     mkdir_p buildpath/"src/github.com/ninech"
     ln_sf buildpath, buildpath/"src/github.com/ninech/reception"
