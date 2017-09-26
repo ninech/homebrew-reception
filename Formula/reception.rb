@@ -34,7 +34,11 @@ class Reception < Formula
     <<-EOS.undent
       Read https://github.com/ninech/reception#macos to learn how to complete the setup!
 
-      Then type http://reception.docker into your browser and 😍.
+      It's important to launch reception as root. So if you use "brew services", use force:
+
+          sudo brew services start reception
+
+      Now type http://reception.docker into your browser and have fun.
     EOS
   end
 
