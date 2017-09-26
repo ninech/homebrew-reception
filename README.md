@@ -12,6 +12,6 @@
 
 1. Copy the output to `Formula/reception.rb`.
 2. Commit & Push the change.
-3. Create a new release called exactly like the version number in the tar.gz
+3. Create a new release called "v{VERSION_FROM_TAR_GZ_FILE}".
    file.
 4. Attach the tar.gz file to the release
