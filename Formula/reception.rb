@@ -3,7 +3,7 @@ class Reception < Formula
   homepage "https://github.com/ninech/reception"
   url "https://github.com/ninech/reception/archive/2.0.0.tar.gz"
   version "2.0.0"
-  sha256 "35c8a221350b684906983286bc7423b79b6a469fce2abfe9a797ffb264ddca3d"
+  sha256 "f2cc027a448990761ca9e3da704f3a6aefeee2520ac246bcf9e1c54ef122ae31"
   head "https://github.com/ninech/reception.git"
 
   depends_on "go" => :build
@@ -13,6 +13,9 @@ class Reception < Formula
   def install
     mkdir_p buildpath/"src/github.com/ninech"
     ln_sf buildpath, buildpath/"src/github.com/ninech/reception"
+
+    ENV["GOBIN"] = buildpath
+    ENV["GOPATH"] = buildpath
 
     system "make", "build"
 
