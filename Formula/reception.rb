@@ -15,6 +15,7 @@ class Reception < Formula
     cellar :any
     root_url "https://github.com/ninech/homebrew-reception/releases/download/v2.0.0_3"
     sha256 "70964ae0e9f1c416ddde43adbb50e955b0f6d38c2f86b7310912ebca01d89f3d" => :sierra
+    sha256 "c899d65c03ec0c228dc4af52c35cd816cb3e1ad4771919b6f32128def3541b66" => :high_sierra
   end
 
   def install
