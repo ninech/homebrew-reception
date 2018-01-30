@@ -32,7 +32,7 @@ class Reception < Formula
   end
 
   def caveats
-    <<-EOS.undent
+    <<~EOS
       Read https://github.com/ninech/reception#macos to learn how to complete the setup!
 
       It's important to launch reception as root. So if you use "brew services", use force:
@@ -45,7 +45,7 @@ class Reception < Formula
 
   plist_options :manual => "sudo reception"
 
-  def plist; <<-EOS.undent
+  def plist; <<~EOS
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1.0">
