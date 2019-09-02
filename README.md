@@ -1,8 +1,10 @@
-[Homebrew](https://brew.sh) tap for [reception](https://github.com/nxt-engineering/reception).
-
-# Important
+# ⚠️ Important ⚠️
 
 **This tap has moved to https://github.com/nxt-engineering/homebrew-reception.**
+
+Homebrew will automatically detect this and checkout the new tap.
+
+# [Homebrew 🍺](https://brew.sh) tap for [_reception_](https://github.com/nxt-engineering/reception)
 
 ## Usage
 
