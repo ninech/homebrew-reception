@@ -1,8 +1,12 @@
-[Homebrew](https://brew.sh) tap for [reception](https://github.com/ninech/reception).
+[Homebrew](https://brew.sh) tap for [reception](https://github.com/nxt-engineering/reception).
+
+# Important
+
+**This tap has moved to https://github.com/nxt-engineering/homebrew-reception.**
 
 ## Usage
 
-    brew tap ninech/homebrew-reception
+    brew tap nxt-engineering/homebrew-reception
     brew install reception
 
 ## How to bottle
@@ -18,6 +22,8 @@
 
 ## About
 
-This tap is currently maintained and funded by [nine](https://nine.ch).
+**This tap is no longer maintained!**
+
+This tap is was originally maintained and funded by [nine](https://nine.ch).
 
 [![logo of the company 'nine'](https://logo.apps.at-nine.ch/Dmqied_eSaoBMQwk3vVgn4UIgDo=/trim/500x0/logo_claim.png)](https://www.nine.ch)
